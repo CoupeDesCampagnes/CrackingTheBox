@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <title>Cracking the Box</title>
+
+  </head>
+
+  <body>
+    <div class="head">
+      <span>{{page.title}}</span>
+    </div>
+    <div class="container" id="container">
+      <div class="scroll" id="main_content">
+        <p>{{ content }}</p>
+      </div>
+    </div>
+  </body>
+  {%- if page.title=="CDC serveur"-%}
+  <script src="dossier/scripts/url.js"></script>
+  {%- endif -%}
+</html>
