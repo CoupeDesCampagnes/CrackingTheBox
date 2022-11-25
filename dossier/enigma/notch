@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/CrackingTheBox/assets/css/style.css?v=">
+    <title>Serveur CDC</title>
+
+  </head>
+
+  <body>
+    <div class="head">
+      <span>Enigma</span>
+    </div>
+    <div class="container" id="container">
+      <div class="scroll" id="main_content">
+
+<p> >> Je suis celui qui a volé la coupe des campagnes. Ne faites pas confiance à la CDC, ils voulaient revendre la coupe et se faire de l'argent avec. </p>
+
+<p> >> Nous allons utiliser un nouveau système de cryptage : Enigma. Au vu de votre expérience, vous devez bien connaître cette machine de cryptage. </p>
+
+<p> >> Vous avez besoin de la clé et du notch qui correspondent aux paramètres des rotors. </p>
+    
+<p> >> La clé, ce n'est que ce que vous recherchez. Quant au notch, il vous faudra tracer. </p>
+  
+<p><a href="https://coupedescampagnes.github.io/CrackingTheBox/dossier/enigma/rotors.pdf">Rotors</a></p>
+
+</p>
+      </div>
+    </div>
+  </body></html>
