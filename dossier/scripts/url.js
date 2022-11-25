@@ -65,9 +65,6 @@ function getUrl(chaine){
     }else if(hash===1548920){
         color_mixer(240,219,255)
         return "Easter Egg"
-    }else if(hash===989825398){
-        color_mixer(176,38,255)
-        return "Easter Egg"
     }
     else {
         return hash
