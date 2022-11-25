@@ -47,6 +47,9 @@ function getUrl(chaine){
     else if (hash===28006732){
         return "http://coupedescampagnes.github.io/CrackingTheBox/dossier/final/grue.html"
     }
+    else if (hash===27272284){
+        return "http://coupedescampagnes.github.io/CrackingTheBox/dossier/final/egout.html"
+    }
     else {
         return hash
     }
