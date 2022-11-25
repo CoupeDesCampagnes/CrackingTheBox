@@ -44,8 +44,8 @@ function getUrl(chaine){
     else if (hash===96825789){
         return "http://coupedescampagnes.github.io/CrackingTheBox/dossier/final/extincteur.html"
     }
-    else if (hash===96825789){
-        return "http://coupedescampagnes.github.io/CrackingTheBox/dossier/final/extincteur.html"
+    else if (hash===28006732){
+        return "http://coupedescampagnes.github.io/CrackingTheBox/dossier/final/grue.html"
     }
     else {
         return hash
