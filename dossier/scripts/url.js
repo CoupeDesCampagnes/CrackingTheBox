@@ -39,7 +39,7 @@ function getUrl(chaine){
         return "http://coupedescampagnes.github.io/CrackingTheBox/dossier/enigma/notch.html"
     }
     else if (hash===20089550){
-        return "http://coupedescampagnes.github.io/CrackingTheBox/dossier/enigma/transformateur.html"
+        return "http://coupedescampagnes.github.io/CrackingTheBox/dossier/final/transformateur.html"
     }
     else if (hash===96825789){
         return "http://coupedescampagnes.github.io/CrackingTheBox/dossier/final/extincteur.html"
