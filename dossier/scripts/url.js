@@ -76,7 +76,7 @@ function getUrl(chaine){
 
 document.querySelector("#button").addEventListener("click", (event) => {
     chaine = document.querySelector("#code").value;
-    texte = getUrl(chaine);
+    texte = fetch("https://www.cdc.ginfo.centrale-med.fr/api/"+chaine);
     document.querySelector("#value").textContent = texte;
     event.preventDefault();
 })
