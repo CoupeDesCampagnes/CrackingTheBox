@@ -1,4 +1,4 @@
-function nombre(chaine) {
+/*function nombre(chaine) {
     var somme = 0
     for (var i=0; i < chaine.length; i++) {
         somme += chaine.charCodeAt(i)
@@ -67,3 +67,40 @@ document.querySelector("#button").addEventListener("click", (event) => {
     document.querySelector("#value").textContent = response;
     event.preventDefault();
 })
+
+*/
+document.addEventListener("DOMContentLoaded", () => {
+  const input = document.getElementById("code");
+  const button = document.getElementById("button");
+  const value = document.getElementById("value");
+
+  button.addEventListener("click", async () => {
+    const key = input.value.trim();
+
+    if (!key) {
+      value.textContent = "Veuillez entrer un code.";
+      return;
+    }
+
+    try {
+      // Appel API
+      const response = await fetch(`https://cdc.ginfo.centrale-med.fr/api/${encodeURIComponent(key)}`);
+
+      // Récupération du texte retourné par Adonis
+      const text = await response.text();
+
+      // Affichage du résultat
+      value.textContent = text;
+
+      // Si la réponse ressemble à une URL → redirection possible
+      if (text.startsWith("http")) {
+        // OPTIONNEL : rediriger automatiquement
+        // window.location.href = text;
+      }
+
+    } catch (err) {
+      value.textContent = "Erreur lors de la connexion au serveur.";
+      console.error(err);
+    }
+  });
+});
