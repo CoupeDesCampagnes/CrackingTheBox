@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/CrackingTheBox/assets/css/style.css?v=">
+    <title>Serveur CDC</title>
 
+  </head>
+
+  <body>
+    <div class="head">
+      <span>Deck</span>
+    </div>
+    <div class="container" id="container">
+      <div class="scroll" id="main_content">
+
+<p> >> Le temps presse! Les admins me traquent. Au bout du couloir de l'UA, un admin m'attendait. J'ai du faire demi-tour. Malheureusement, je suis coincé : il a appelé un autre admin qui était à l'étage en dessous </p>
+
+<p> >> Je suis obligé de monter vers le cinquième étage mais je sais que ma fin est proche</p>
+
+<p> >> J'étais voué à me faire attraper. Ma diversion a que trop bien marché. Ils vont me torturer pour avoir des informations mais je ne leurs dirai rien. Si tu crois en une juste cause, je vais te révéler une information qui devrait nous aider pour la suite : il y a un deuxième voleur</p>
+    
+<p> >> J'ai caché sa localisation dans ce que j'ai pu voir autour de moi. Décrite ce <a href="">message</a> et sauve la coupe</p>
+  
+</p>
+      </div>
+    </div>
+  </body></html>
