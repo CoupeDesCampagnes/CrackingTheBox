@@ -55,10 +55,15 @@ function getUrl(chaine){
     }
 }
 
+async function afficherReponse(key) {
+  const reponse = await fetch("https://cdc.ginfo.centrale-med.fr/api/"+key);
+  const texte = await reponse.text();
+  return texte;
+}
+
 document.querySelector("#button").addEventListener("click", (event) => {
     const chaine = document.querySelector("#code").value;
-    const response = await fetch("https://cdc.ginfo.centrale-med.fr");
-    const texte = await response.text();
-    document.querySelector("#value").textContent = texte;
+    const response = await afficherReponse(chaine);
+    document.querySelector("#value").textContent = response;
     event.preventDefault();
 })
