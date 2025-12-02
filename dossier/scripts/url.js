@@ -1,4 +1,4 @@
-/*function nombre(chaine) {
+function nombre(chaine) {
     var somme = 0
     for (var i=0; i < chaine.length; i++) {
         somme += chaine.charCodeAt(i)
@@ -55,53 +55,15 @@ function getUrl(chaine){
     }
 }
 
-async function afficherReponse(key) {
-  const reponse = await fetch("https://cdc.ginfo.centrale-med.fr/api/"+key);
-  const texte = await reponse.text();
-  return texte;
+async function truc(key) {
+    var value = document.getElementById("value");
+    const feur = await fetch("https://cdc.ginfo.centrale-med.fr/api/"+key);
+    const data = await feur.text();
+    value.innerHTML = data;
 }
 
-document.querySelector("#button").addEventListener("click", (event) => {
-    const chaine = document.querySelector("#code").value;
-    const response = await afficherReponse(chaine);
-    document.querySelector("#value").textContent = response;
+document.querySelector("#button").addEventListener("click", async (event) => {
+    const key = document.querySelector("#code").value;
+    await truc(key);
     event.preventDefault();
 })
-
-*/
-
-document.addEventListener("DOMContentLoaded", () => {
-  const input = document.getElementById("code");
-  const button = document.getElementById("button");
-  const value = document.getElementById("value");
-
-  button.addEventListener("click", async () => {
-    const key = input.value.trim();
-
-    if (!key) {
-      value.textContent = "Veuillez entrer un code.";
-      return;
-    }
-
-    try {
-      // Appel API
-      const response = await fetch(`https://cdc.ginfo.centrale-med.fr/api/${encodeURIComponent(key)}`);
-
-      // Récupération du texte retourné par Adonis
-      const text = await response.text();
-
-      // Affichage du résultat
-      value.textContent = text;
-
-      // Si la réponse ressemble à une URL → redirection possible
-      if (text.startsWith("http")) {
-        // OPTIONNEL : rediriger automatiquement
-        // window.location.href = text;
-      }
-
-    } catch (err) {
-      value.textContent = "Erreur lors de la connexion au serveur.";
-      console.error(err);
-    }
-  });
-});
