@@ -69,6 +69,7 @@ document.querySelector("#button").addEventListener("click", (event) => {
 })
 
 */
+
 document.addEventListener("DOMContentLoaded", () => {
   const input = document.getElementById("code");
   const button = document.getElementById("button");
