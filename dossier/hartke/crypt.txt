@@ -18,5 +18,5 @@ lecture de haut en bas
 19 	30
 21'
 
-réponse sans accent
+réponse sans accents et sans majuscules
 mets des - à la place des espaces
